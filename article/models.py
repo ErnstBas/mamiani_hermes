@@ -7,7 +7,7 @@ class Article(models.Model):
     text = models.TextField(max_lentgth=1000)
     author = models.ManyToManyField(Author.author)
     date = models.DateField(auto_now=True)
-    image =models.ImageField(upload_to ='images')
+    image = models.ImageField(upload_to ='images')
 
 
     
